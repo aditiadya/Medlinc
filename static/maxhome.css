@@ -1,0 +1,90 @@
+.homeheading{
+    text-align: center;
+    color: #1b3872;
+    font-weight: 600;
+    margin-bottom: 2%;
+    margin-top: 10%;
+}
+
+.healthcarecomeshome {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #1b3872;
+    /* font-weight: bold; */
+}
+
+.hcch {
+    margin-left: 25rem;
+}
+
+.card-img-top {
+    background-color: white;
+    width: auto;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.card {
+    width: auto;
+    color: #21458b;
+    
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .col {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .col {
+        width: 100%;
+    }
+}
+
+.card-title {
+    margin: auto;
+
+    font-weight: bold;
+    color: #1b3872;
+}
+
+.card-text {
+    text-align: left;
+    margin-left: 2%;
+    color: #1b3872;
+}
+
+.card-title1 {
+    margin-left: 11%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #1b3872;
+}
+
+.list-group-itemm {
+    width: 25%;
+    /* height: 25%; */
+    font-size: 17px;
+    background-color: #1b3872;
+    color: white;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .list-group {
+        display: inline;
+    }
+    .list-group-itemm{
+        margin: auto;
+        border-radius: 1px;
+        font-size: 20px;
+        margin-left: 20%;
+    }
+}
+

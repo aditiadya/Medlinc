@@ -1,0 +1,188 @@
+.navbar-nav {
+
+    margin: auto;
+    padding: auto;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.hos {
+    
+    position: relative;
+}
+
+.appointment {
+    width: 100%;
+    height: 10rem;
+    opacity: 0.3;
+
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    margin-left: 25%;
+    top: 10%;
+    left: 6%;
+}
+
+.text1 {
+    position: absolute;
+    text-align: center;
+    margin-left: 25%;
+    top: 50%;
+    left: 8%;
+}
+
+.card-group {
+    width: 80%;
+
+
+}
+
+.imageCard {
+
+    margin: auto;
+    margin-top: 9%;
+    height: 10%;
+
+    top: 15%;
+    left: 6%;
+}
+
+.maxhome {
+    width: 20%;
+    margin-left: auto;
+}
+
+.maxlab {
+    width: 20%;
+    margin-left: auto;
+}
+
+.maxcheckup {
+    width: 20%;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.card-title {
+
+    margin: 10%;
+    margin-top: 25%;
+    margin-left: 15%;
+    text-align: center;
+    
+    left: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    .text {
+        
+        position: absolute;
+        text-align: center;
+        margin-left: -3%;
+        top: 10%;
+        
+    }
+
+    .text1 {
+        position: absolute;
+        text-align: center;
+        margin-left: -4%;
+        top: 50%;
+        /* left: 8%; */
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+
+.card1{
+    background-color: #1b3872;
+    color: white;
+    padding: 2% 7%
+
+}
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    color: white;
+    padding: 4px;
+}
+
+ul>li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+hr {
+    border-width: 3px;
+}
+
+.social>i {
+    padding: 1%;
+    font-size: 15px;
+}
+
+
+
+.policy>div {
+    padding: 4px;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    /* color: white; */
+}
+.divider {
+    border-top: 2px solid rgba(189, 196, 203, 0.5);
+    ;
+}
+
+.d-flex {
+    margin-top: 7%;
+}
+
+.fa1:hover {
+    color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+
+.fa2:hover {
+    color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.fa3:hover {
+    color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.fa4:hover {
+    color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.fa5:hover {
+    color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.pull-right1{
+    margin: auto;
+margin-left: -20%;
+}

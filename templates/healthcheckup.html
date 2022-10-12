@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+<style>
+    .card3 {
+        width: 100%;
+        background-color: #2c83b8;
+    }
+
+    .img-fluid3 {
+        width: 40%;
+        border: 2px black;
+        margin: auto;
+        margin-left: 15%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .card-title3 {
+        color: white;
+        margin-top: 8%;
+        font-weight: bold;
+    }
+
+    .card-text3 {
+        color: white;
+        font-size: 20px;
+    }
+
+    .text-muted3 {
+        margin: auto;
+        color: white;
+    }
+    .heading3{
+        font-weight: bold;
+        color: #1b3872;
+    }
+    .paragraph3{
+        color: #1b3872;
+        font-size: 18px;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .img-fluid3 {
+            margin-left: 25%;
+        }
+
+        .card-title3 {
+            text-align: center;
+        }
+
+        .card-text3 {
+            text-align: center;
+        }
+    }
+</style>
+
+<!-- card1  -->
+<div class="card3 mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="https://www.maxhealthcare.in/img/white/php_icon.svg" class="img-fluid3 rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <p class="card-text3"><small class="text-muted3">Home - Preventive Health Checks</small></p>
+                <h2 class="card-title3">Preventive Health Checks</h2>
+                <p class="card-text3">Choose from our wide range of Preventive Health <br> Check Plans that are designed
+                    keeping your health needs in mind.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card 2 -->
+<div class="card">
+    <div class="card-header">
+        <h2 class="heading3">
+            Importance of Preventive Health Checks 
+        </h2>
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p class="paragraph3">
+
+                The focus of the PHC Programme is on administering a truly standardized and medically correct set of tests. Unlike others, we do not include  or exclude tests just to make our Programme available at pre-decided prices.
+                <br>
+                <br>
+                
+                Medically incomplete Preventive Check-Ups can give you a false sense of security, as they do not include certain tests, which might be of vital importance to you. The Max Preventive Health Programme is designed keeping in mind the disease risk profile, which essentially varies with age and gender. On the strength of medical evidence, we have packages that are just right for you.
+                </p>
+            <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
+        </blockquote>
+    </div>
+</div>
+{% endblock content %}
