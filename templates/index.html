@@ -13,33 +13,143 @@
     <!-- <link rel="stylesheet" href="base.js"> -->
     <link rel="stylesheet" href="static/index.css">
 
-    <title>Max Superspecialist</title>
+    <title>Healthify</title>
     <style>
-        .list-group-item5{
+        .maxsuperspecialist {
+            font-weight: bold;
+            color: #1b3872;
+        }
+
+        .navbar {
+            background-color: #35b6b4;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .nav-link:hover {
+            color: #1b3872;
+        }
+
+        .list-group-item5 {
             color: black;
             /* background-color: black; */
             text-align: center;
             width: 100%;
         }
-        .dropdown-menu{
+
+        .dropdown-menu {
             width: 310px;
         }
-        @media only screen and (max-width: 600px){
-            .dropdown-menu{
+
+        .buttonss {
+            text-align: end;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .dropdown-menu {
                 width: 98%;
             }
         }
 
+        /* testimonial */
+       
+
+        
+
+        p {
+            font-size: 17px;
+            margin-bottom: 7px
+        }
+
+        .small {
+            letter-spacing: 0.5px !important
+        }
+
+        .card-header img {
+            border: 5px solid white !important
+        }
+
+        .outside {
+            position: inherit;
+            top: -50%
+        }
+
+        .card {
+            border-radius: 20px !important;
+            box-shadow: 2px 2px 5px 0px rgb(100, 108, 170);
+            transition: 0.8s
+        }
+
+        .card-header {
+            border-radius: 20px !important
+        }
+
+        .card-footer {
+            border-radius: 20px !important
+        }
+
+        hr {
+            background-color: rgb(146, 154, 236);
+            border: 1px solid;
+            border-radius: 20px;
+            color: rgb(146, 154, 236);
+            height: 5px;
+            width: 70px !important
+        }
+
+        .bold {
+            font-weight: 500
+        }
+
+        .profile-pic {
+            margin-bottom: -5px !important
+        }
+
+        .quotes {
+            position: relative;
+            top: -10px
+        }
+
+        .quotes-down {
+            position: relative;
+            top: -4 px
+        }
+
+        .fa {
+            color: rgb(174, 178, 219);
+            cursor: pointer
+        }
+
+        .card-footer .fa {
+            font-size: 20px !important
+        }
+
+        .name {
+            margin-top: -50px !important
+        }
+
+        .container-fluid:hover .card:not(:hover) {
+            transform: scale(0.9)
+        }
+
+        @media (max-width: 1000px) {
+            .container-fluid:hover .card:not(:hover) {
+                transform: scale(1)
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg ">
 
         <div class="container-fluid">
 
-            <a class="navbar-brand">Max SuperSpecialist</a>
+            <!-- <a class="navbar-brand">Max SuperSpecialist</a> -->
+            <h4 class="maxsuperspecialist">Healthify</h4>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -55,26 +165,43 @@
                             aria-expanded="false">
                             Treatments
                         </a>
-                        <ul  class="dropdown-menu">
+                        <ul class="dropdown-menu">
                             <ul style="background-color: #1b3872;" class="list-group list-group-flush">
-                                <li style="color: #1b3872" class="list-group-item"><h4> <b> Procedures </b></h4></li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Bariatric Surgery</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Bone Marrow Transplant(BMT)</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Brain Stroke Treatment</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Brain Tumour Surgery</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Breast Reduction Surgery</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Cardiac Valve Replacement Surgery</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Cataract Surgery</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Chemotherapy</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Coronary Angioplasty</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Coronary Artery Bypass Grafting(CABG)</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Kidney Transplant</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Liver Transplant</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Lung Transplant</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Pacemaker Implantation</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Prostate Laser Surgery</li>
-                              </ul>
-                              
+                                <li style="color: #1b3872" class="list-group-item">
+                                    <h4> <b> Procedures </b></h4>
+                                </li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Bariatric Surgery</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Bone Marrow Transplant(BMT)</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Brain Stroke Treatment</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Brain Tumour Surgery</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Breast Reduction Surgery</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Cardiac Valve Replacement Surgery</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Cataract Surgery</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Chemotherapy</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Coronary Angioplasty</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Coronary Artery Bypass Grafting(CABG)</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Kidney Transplant</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Liver Transplant</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Lung Transplant</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Pacemaker Implantation</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Prostate Laser Surgery</li>
+                            </ul>
+
                         </ul>
                     </li>
                     </a>
@@ -83,60 +210,80 @@
                             aria-expanded="false">
                             Services
                         </a>
-                        <ul  class="dropdown-menu">
+                        <ul class="dropdown-menu">
                             <ul style="background-color: #1b3872;" class="list-group list-group-flush">
-                                
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">COVID-19 Vaccination for Children</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Max Lab</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Max @Home</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Prevention Health Checks</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Emergency</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Frequesntly Asked Questions</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Immigration Services</li>
-                                <li style="margin-right: auto; background-color: #1b3872; color: white;" class="list-group-item">Insurance & TPA</li>
-                                
-                              </ul>
-                              
+
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">COVID-19 Vaccination for Children</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Max Lab</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Max @Home</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Prevention Health Checks</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Emergency</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Frequesntly Asked Questions</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Immigration Services</li>
+                                <li style="margin-right: auto; background-color: #1b3872; color: white;"
+                                    class="list-group-item">Insurance & TPA</li>
+
+                            </ul>
+
                         </ul>
                     </li>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Quick Enquiry
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="enquiry">Quick Enquiry</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">My Reports</a>
+                        <a class="nav-link active" aria-current="page" href="reports">My Reports</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        <a class="nav-link active" aria-current="page" href="medicines">Your Medicines</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="payment">Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="admin/">Admin</a>
+                    </li>
+
+
                 </ul>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="bookanapointment">Book An Appointment</a>
-                </li>
+
 
 
             </div>
         </div>
+
     </nav>
 
-    <div class="hos">
-        <img class="appointment" src="static/1.jpg" alt="">
+    <!-- Login -->
+    <div class="buttonss">
+        <a class="btn btn-outline-success" href="bookanapointment" role="button">Book An Appointment</a>
+        <a class="btn btn-outline-success" href="sap" role="button">Login/SignUp</a>
+    </div>
 
-        <h2 class="text">
-            Schedule Your Appointment Online
-        </h2>
+
+
+    <div class="hos">
+        <a href="bookanapointment">
+            <img class="appointment" src="static/1.jpg" alt="">
+        </a>
+
+        <a style="color: black;" href="bookanapointment">
+            <h2 class="text">
+                Schedule Your Appointment Online
+            </h2>
+        </a>
 
         <h5 class="text1">
             Get <b> 10% discount</b> on all In-Hospital appointments*
@@ -153,7 +300,7 @@
                         class="card-img-top" alt="...">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Max Home</h5>
+                    <h5 class="card-title">Healthify Home</h5>
 
                 </div>
             </div>
@@ -166,7 +313,7 @@
                         class="card-img-top" alt="...">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Max Lab</h5>
+                    <h5 class="card-title">Healthify Lab</h5>
 
                 </div>
             </div>
@@ -180,7 +327,7 @@
                         class="card-img-top" alt="...">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Max Checkup</h5>
+                    <h5 class="card-title">Healthify Checkup</h5>
 
                 </div>
 
@@ -189,7 +336,150 @@
     </div>
 
 
-
+    <!-- testimonials -->
+    <div style="text-align: center; margin-top:7%;color: #35b6b4; margin-bottom: -5%; " class="testimonials">
+        <h2>
+            <b>
+            Testimonials
+        </b>
+        </h2>
+    </div>
+    <div class="container-fluid my-5 justify-content-center">
+        <div class=" row justify-content-center ">
+            <!-- card1  -->
+            <div class="col-lg-4 col-12 mt-5 ">
+                <div style="background-color: #e0f3ff;" class="card mt-3 ">
+                    <div class="card-header bg-white text-center border-0 ">
+                        <div class="row justify-content-center ">
+                            <div class="col"> <img
+                                    class="align-self-center text-center rounded-circle outside img-fluid"
+                                    src="https://media.newyorker.com/photos/5c61ae25f36fcb4eed3ac64f/1:1/w_1978,h_1978,c_limit/Chotiner-How-Jeff-Bezos-Sees-the-Press.jpg" width="110" height="110"> </div>
+                        </div>
+                        <div class="row text-center name">
+                            <div style="margin-top: 15%;" class="col">
+                                <h5 class="mb-0 profile-pic">Elizabeth Smith</h5> <small class="mt-0">Director of
+                                    Marketing</small>
+                                <p><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span
+                                        class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span
+                                        class="fa fa-star-o mr-1"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0 text-center pb-3 ">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col">
+                                <p class="bold"> <span><img class="img-fluid quotes"
+                                            src="https://i.imgur.com/U20aFIt.png" width="40" height="40"></span> Growth
+                                    of data is exponential and our ability to get true insight that matter was
+                                    challenging with classic, traditional Bi tools. Vertix allow us to unserstand what
+                                    is driving exceptions so we can take action <span><img class="img-fluid quotes-down"
+                                            src="https://i.imgur.com/DPzmyiD.png" width="40" height="40"> </span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0 mt-0 pt-0">
+                        <div class="row">
+                            <div class="col"><span class="mx-2"><i class="fa fa-twitter"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-pinterest-p"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-google-plus"
+                                        aria-hidden="true"></i></span></div>
+                        </div>
+                        <hr class="my-1">
+                    </div>
+                </div>
+            </div>
+            <!-- card2 -->
+            <div class="col-lg-4 mt-5 col-12 ">
+                <div style="background-color: #e0f3ff;" class="card mt-3">
+                    <div class="card-header bg-white text-center border-0 ">
+                        <div class="row justify-content-center ">
+                            <div class="col"> <img
+                                    class="align-self-center text-center rounded-circle outside img-fluid"
+                                    src="https://media.themorningcontext.com/uploads/2022/05/558x441_Gautam_Adani.jpg" width="110" height="110"> </div>
+                        </div>
+                        <div class="row text-center name">
+                            <div style="margin-top: 15%;" class="col">
+                                <h5 class="mb-0 profile-pic">Maria Hernandez</h5> <small class="mt-0">Director of
+                                    Marketing</small>
+                                <p><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span
+                                        class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span
+                                        class="fa fa-star mr-1"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0 text-center pb-3 ">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col">
+                                <p class="bold"> <span><img class="img-fluid quotes"
+                                            src="https://i.imgur.com/U20aFIt.png" width="40" height="40"></span> Growth
+                                    of data is exponential and our ability to get true insight that matter was
+                                    challenging with classic, traditional Bi tools. Vertix allow us to unserstand what
+                                    is driving exceptions so we can take action <span><img class="img-fluid quotes-down"
+                                            src="https://i.imgur.com/DPzmyiD.png" width="40" height="40"></span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0 mt-0 pt-0">
+                        <div class="row">
+                            <div class="col"> <span class="mx-2"><i class="fa fa-twitter"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-pinterest-p"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-google-plus"
+                                        aria-hidden="true"></i></span> </div>
+                        </div>
+                        <hr class="my-1">
+                    </div>
+                </div>
+            </div>
+            <!-- card3  -->
+            <div class="col-lg-4 col-12 mt-5">
+                <div style="background-color: #e0f3ff;" class="card mt-3">
+                    <div class="card-header bg-white text-center border-0 ">
+                        <div class="row justify-content-center ">
+                            <div class="col"> <img
+                                    class="align-self-center text-center rounded-circle outside img-fluid"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg" width="110" height="110"> </div>
+                        </div>
+                        <div class="row text-center name">
+                            <div style="margin-top: 15%;" class="col">
+                                <h5 class="mb-0 profile-pic">Michael Smith</h5> <small class="mt-0">Director of
+                                    Marketing</small>
+                                <p><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span
+                                        class="fa fa-star-o mr-1"></span><span class="fa fa-star-o mr-1"></span><span
+                                        class="fa fa-star-o mr-1"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0 text-center pb-3 ">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col">
+                                <p class="bold"> <span><img class="img-fluid quotes"
+                                            src="https://i.imgur.com/U20aFIt.png" width="40" height="40"></span> Growth
+                                    of data is exponential and our ability to get true insight that matter was
+                                    challenging with classic, traditional Bi tools. Vertix allow us to unserstand what
+                                    is driving exceptions so we can take action <span><img class="img-fluid quotes-down"
+                                            src="https://i.imgur.com/DPzmyiD.png" width="40" height="40"> </span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0 mt-0 pt-0">
+                        <div class="row">
+                            <div class="col"> <span class="mx-2"><i class="fa fa-twitter"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-pinterest-p"
+                                        aria-hidden="true"></i></span><span class="mx-2"><i class="fa fa-google-plus"
+                                        aria-hidden="true"></i></span> </div>
+                        </div>
+                        <hr class="my-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer  -->
     <div class="container-fluid mt-5">
@@ -200,9 +490,10 @@
                 <div class="col-md-4 col-sm-11 col-xs-11">
                     <div class="footer-text pull-left">
                         <div class="d-flex">
-                            <h1 class="font-weight-bold mr-2 px-3" style="color:#16151a; background-color:#957bda"> Max
+                            <h1 class="font-weight-bold mr-2 px-3" style="color:#16151a; background-color:#957bda">
+                                Healthify
                             </h1>
-                            <h1 style="color: #957bda">SuperSpecialist</h1>
+                            <h1 style="color: #957bda"></h1>
                         </div>
                         <p style="color: white;" class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Commodi non

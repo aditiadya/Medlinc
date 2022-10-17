@@ -1,4 +1,9 @@
-from django.shortcuts import render
+from email import message
+from email.headerregistry import Address
+from unicodedata import name
+from django.shortcuts import redirect, render
+from django.contrib import messages
+from .models import Contact, Enquiry, signup
 
 # Create your views here.
 def index(request):
@@ -18,3 +23,68 @@ def healthcheckup(request):
 
 def bookanapointment(request):
     return render(request, 'bookanapointment.html')
+
+
+
+def login(request):
+    return render(request, 'login.html')
+
+def reports(request):
+    return render(request, 'reports.html')
+
+def medicines(request):
+    return render(request, 'medicines.html')
+
+def payment(request):
+    return render(request, 'payment.html')
+
+def sos(request):
+    return render(request, 'sos.html')
+
+# contact
+def contact(request):
+    # messages.success(request, 'Welcome To Contact')
+    if request.method=='POST':
+        name = request.POST.get('name', '')
+        phone = request.POST.get('phone', '')
+        email = request.POST.get('email', '')
+        content = request.POST.get('content', '')
+        contact = Contact(name=name, email=email, phone=phone, content=content)
+        print(name, email, phone, content)
+        contact.save()
+        messages.success(request, "Thank You For Choosing Us!")
+        return redirect("/contact")
+    return render(request, 'contact.html')
+
+    # Enuiry 
+def enquiry(request):
+    # messages.success(request, 'Welcome To Contact')
+    if request.method=='POST':
+        name = request.POST.get('name', '')
+        phone = request.POST.get('phone', '')
+        email = request.POST.get('email', '')
+        content = request.POST.get('content', '')
+        enquiry = Enquiry(name=name, email=email, phone=phone, content=content)
+        print(name, email, phone, content)
+        enquiry.save()
+        messages.success(request, "Enquiry Send Successfully!")
+        return redirect("/enquiry")
+    return render(request, 'enquiry.html')
+
+# sign up as patient 
+def sap(request):
+    # messages.success(request, 'Welcome To Contact')
+    if request.method=='POST':
+        name = request.POST.get('name', '')
+        email = request.POST.get('email', '')
+        password = request.POST.get('password', '')
+        enquiry = signup(name=name, email=email, password=password)
+        print(name, email, password)
+        sap.save()
+        messages.success(request, "Enquiry Send Successfully!")
+        return redirect("/sap")
+    return render(request, 'sap.html')
+
+def sign(request):
+
+    return render(request, 'sign.html')
