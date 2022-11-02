@@ -17,6 +17,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=200)),
                 ('phone', models.CharField(max_length=15)),
                 ('email', models.CharField(max_length=200)),
+                ('Dates', models.DateField(auto_now_add=False, auto_now=False, blank=True)),
                 ('content', models.TextField()),
             ],
         ),

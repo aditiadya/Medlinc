@@ -8,7 +8,14 @@
         color: #35b6b4;
     }
 </style>
-
+{% for message in messages %}
+            <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                <strong></strong> {{message}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+<form action="/bookanapointment" method="post">
+    {%csrf_token%}
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6 offset-md-3 border p-4 shadow bg-light">
@@ -18,22 +25,20 @@
             <form action="">
                 <div class="row g-3">
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Full Name" required>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required>
                     </div>
                     
                     <div class="col-md-6">
-                        <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone Number" required>
                     </div>
                     <div class="col-md-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" required>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email" required>
                     </div>
-                    <div class="col-md-6">
-                        <input type="date" class="form-control" placeholder="Enter Date" required>
-                    </div>
+                    
                     <!-- <div class="col-md-6">
                         <input type="time" class="form-control" placeholder="Enter time ">
                     </div> -->
-                    <div class="col-12">
+                    <div class="col-12" id="bookanapointment" name="bookanapointment">
                         <select class="form-select" required>
                             <option selected>Book An Appointment For</option>
                             <option value="1">Consultancy</option>

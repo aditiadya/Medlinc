@@ -1,9 +1,11 @@
 from email import message
 from email.headerregistry import Address
 from unicodedata import name
+from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.contrib import messages
-from .models import Contact, Enquiry, signup
+from .models import Contact, Enquiry, Signup
+from django.contrib.auth.models import User
 
 # Create your views here.
 def index(request):
@@ -21,8 +23,10 @@ def maxlab(request):
 def healthcheckup(request):
     return render(request, 'healthcheckup.html')
 
-def bookanapointment(request):
-    return render(request, 'bookanapointment.html')
+
+
+def vc(request):
+    return render(request, 'vc.html')
 
 
 
@@ -40,6 +44,9 @@ def payment(request):
 
 def sos(request):
     return render(request, 'sos.html')
+
+def cart(request):
+    return render(request, 'cart.html')
 
 # contact
 def contact(request):
@@ -71,20 +78,34 @@ def enquiry(request):
         return redirect("/enquiry")
     return render(request, 'enquiry.html')
 
+def bookanapointment(request):
+    return render(request, 'bookanapointment.html')
+
 # sign up as patient 
 def sap(request):
     # messages.success(request, 'Welcome To Contact')
     if request.method=='POST':
-        name = request.POST.get('name', '')
-        email = request.POST.get('email', '')
-        password = request.POST.get('password', '')
-        enquiry = signup(name=name, email=email, password=password)
-        print(name, email, password)
-        sap.save()
-        messages.success(request, "Enquiry Send Successfully!")
+        name = request.POST['name']
+        email = request.POST['email']
+        password = request.POST['password']
+        confirmpassword = request.POST['confirmpassword']
+
+        if not name.isalnum():
+            messages.error(request, "Username should only contain letter and numbers.")
+            return redirect('/sap')
+
+        if password != confirmpassword:
+            messages.error(request, "Passwords do not match")
+            return redirect('/sap')
+
+        myuser = Signup.objects.create(name=name, email=email, password='*****', confirmpassword="*****")
+        myuser.save()
+        messages.success(request, "Sign Up Successfully!")
         return redirect("/sap")
     return render(request, 'sap.html')
+    # else:
+        # return HttpResponse('404 - Not Found')
 
-def sign(request):
+def signin(request):
 
-    return render(request, 'sign.html')
+    return render(request, 'signin.html')
