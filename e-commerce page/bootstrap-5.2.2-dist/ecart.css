@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main-head{
+    background-color:#35b6b4;
+    color: white;
+    position: sticky;
+    top: 0px;
+    height: 6em;
+    z-index: 3;   
+}
+nav{
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    min-height: 2vh;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #f2f2f2;
+}
+nav{
+  background-color: #35b0b6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 100px;
+}
+nav .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+nav .nav-items{
+  display: flex;
+  flex: 1;
+  padding: 0 0 0 40px;
+}
+nav .nav-items li{
+  list-style: none;
+  padding: 0 15px;
+}
+nav .nav-items li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .nav-items li a:hover{
+  color: #7cc2c5;
+;
+}
+nav form{
+  display: flex;
+  height: 40px;
+  padding: 2px;
+  background: #ffffff;
+  min-width: 18%!important;
+  border-radius: 2px;
+  border: 1px solid rgba(155,155,155,0.2);
+}
+nav form .search-data{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+nav form button{
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  background:#669699;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+nav form button:hover{
+    display: flex;
+  background: #3b9ea5;
+}
+nav .menu-icon,
+nav .cancel-icon,
+nav .search-icon{
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+nav .menu-icon span,
+nav .cancel-icon,
+nav .search-icon{
+  display: none;
+}
+
+.form-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+.btn{
+    margin: auto;
+    box-shadow: #7e9fc6;
+    background-color: #bac9d4;
+}
+button:hover{
+    margin: auto;
+    background-color: #27394e;
+}
+.button{
+    background-color: #35b0b6;
+    color: black;
+    align-items: center;
+    margin: 20%;
+}
+#pingo{
+  height: 40em;  
+}
+.carousel-item{
+    height: 27em;
+}
+.cards{
+    margin-left: 11%;
+    justify-content: center;
+    align-items: center;
+}
+.card-img{
+  width: auto;
+  max-width: 15em;
+  height: 16vh;
+  max-height: 10em;
+  align-items: center;
+}   
+.card{
+    display: inline-flex;
+    height: 40vh;
+    margin-left: 6%;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1), 0px 20px 20px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+
+}
+.card h4,p{
+    font-weight: normal;
+    padding: 1rem;
+}
+
+.bun{
+    color: rgb(0, 0, 0)    ;
+    background-color: #35b0b6;
+    text-shadow: #27394e;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+    width: 16em;
+    height: 3em;
+    border: none;
+}
+.part1{
+    margin-top: 3%;
+    margin-left: 3.5%;
+    margin-bottom: 2%;
+}
+.bun .wishlist{
+    display: inline-flex;
+}
+.search-icon:hover{
+  background-color: #27394e;
+
+}
+.cart{
+  display: block;
+  border-radius: 20%;
+  margin-left: 10em;
+  width: 3rem;
+  height: 2.5rem;
+  align-items: center;
+  background-color: #35b0b6;
+  border: none;
+}
+.cart:hover{
+margin-left: 10em;
+background-color: #7cc2c5;
+}
+#search input[type=text]{
+  width:300px;
+  height:25px;
+  border-radius:25px;
+  border: none;
+}
+   
+#search{
+  float:right;
+  margin:7px;
+}
+   
+#search button{
+  background-color: #35b0b6;
+  color: #f2f2f2;
+  float: right;
+  margin-top: 1px;
+  padding:  8px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+#search button:hover{
+  background-color: #7cc2c5;
+}
+.lol
+{
+  margin-top: 5px;
+}
+
+.next1
+{
+ width: 6%;
+}
+.prev1
+{
+width: 6%;
+}
+.next2
+{
+ width: 6%;
+}
+.prev2
+{
+width: 6%;
+}
+.next3
+{
+ width: 6%;
+}
+.prev3
+{
+width: 6%;
+}
+
